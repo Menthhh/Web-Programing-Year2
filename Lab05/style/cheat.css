@@ -1,0 +1,181 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    flex: 1; /* This section will take available space */
+    max-width: 250px; /* Limit the width of the left section */
+    width: 35%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-bottom: 230px;
+    margin-bottom: 200px;
+    padding-right: 50px;
+    
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.information-section {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+/* Additional styles can be added to further customize the appearance of the sections */
+#address{
+    
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#contract{
+    
+    font-weight: bold;
+    margin-top:160px;
+}
+
+#color{
+    
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#personal-information-text{
+    
+    font-weight: bold;
+    height: 50px;
+
+}
+
+#education{
+    
+    font-weight: bold;
+    margin-top: 380px;
+}
+
+#skills{
+    
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#submit{
+    margin-top: 100px;
+    margin-left: 200px;
+    
+}
+
+.SubButton button {
+    text-align: right;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.SubButton button:hover {
+    background-color: #004c75;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+/* 600px or smalleer */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    .information-section{
+        display: flex;
+    }
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .profile-section{
+        width: 100%;
+        max-width: none; /* Reset max-width */
+        max-width: none; /* Reset max-width */
+    }
+    .profile-image {
+        width: 50%;
+        height: 50%;
+    }
+}
+/* between 600px and 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+    .information-section{
+        display: flex;
+    }
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .profile-section{
+        width: 100%;
+        max-width: none; /* Reset max-width */
+        max-width: none; /* Reset max-width */
+    }
+    .profile-image {
+        width: 50%;
+        height: 50%;
+    }
+    
+
+
+/* 900px or larger */
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* When display height is larger than 800px */
+@media screen and (min-height: 800px) {
+    .profile-image {
+        width: 110%;
+        height: 110%;
+}
+}
+    
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}

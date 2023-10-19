@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alarm</title>
+        <meta charset="utf-8">
+        <style>
+            table{
+                border-collapse: collapse;
+                text-align: center;
+                margin: auto;
+                border: 1px solid black;
+                background-color: rgb(255, 255, 255);
+            }
+            td{
+                border: 0.1px solid black;
+                padding: 4px;
+            }
+            p, h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>Time Schedule</h1>
+        <p>Select Date: <input type="date" id="date" name="date" value="2023-09-14"></p>
+
+        <br><br>
+        <div id="divAlarm"></div>
+        <br><br>
+        <button id="btn"></button>
+        <p>
+            import Schedule <button id="import"></button> <p id="state"></p>
+        </p>
+        <button id="save"></button> <br><br>
+        <button id="export"></button>
+        <script src="./index.js"></script>
+    </center>
+    </body>
+</html>

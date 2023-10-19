@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- <link rel="stylesheet" href="Profile.css"> -->
+    <style>
+        input{
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 7px 10px;
+        font-size: 16px;
+        font-family: Arial;
+        background-image: linear-gradient(to right, rgba(93, 150, 145, 0.707), rgba(83, 152, 98, 0.707));
+        } */
+        textarea{
+            background-image: linear-gradient(to right, rgba(93, 150, 145, 0.707), rgba(83, 152, 98, 0.707));
+        }
+        select{
+            background-image: linear-gradient(to right, rgba(93, 150, 145, 0.707), rgba(83, 152, 98, 0.707));
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }        
+        tbody{
+            background-image: linear-gradient(to right, rgba(166, 106, 211, 0.707), rgba(232, 112, 146, 0.707));
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border-radius: 100%;
+        }
+        .SubButton button {
+            text-align: right;
+            background-color: #008CBA;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .SubButton button:hover {
+            background-color: #004c75;
+        }
+        .longInput{
+            width: 400px;
+        }
+        
+        td {
+            color: rgb(25, 0, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .colorful{
+            border: 2px solid rgb(25, 0, 255);
+        }
+
+    </style>
+    <script src="Lab.js"></script>
+    <script src="UpdateValue.js"></script>
+</head>
+<body>
+    <form>
+        <table border="0" class="colorful" >
+            <thead style="background-color: pink;">
+                <tr style="background-color:blue;">
+                    <td>
+                    </td>
+                    <th style="font-family: fantasy;">
+                        <p><strong>Personal Information</strong></p><hr>
+                    </th>
+                </tr>
+                <tr >
+                    <td rowspan="4">
+                        <img src="https://www.davelabowitz.com/wp-content/uploads/Sisyphus-e1557869810488.jpg", alt="" class="image">
+                    </td>
+                    <td>
+                        <label ><strong>Name:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="name" name="Name_Input" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Age:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="range" id="age" name="Age_Input" onchange="updateAgeValue()">
+                        <label id="ageValue">50</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr><label ><strong>Profile:</strong></label>
+                    </td>
+                    <td>
+                        <label><strong>Email:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="background-image: linear-gradient();">
+                        <textarea id="profile" name="Input_Profile" rows="4" cols="50"></textarea>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="Input_email" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Phone:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" id="phone" name="Input_Tel" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Adress:</strong></label><hr>
+                    </td>
+                    <td>
+                        <label><strong>Education:</strong></label><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="street" name="Street_Input" class="longInput">
+                    </td>
+                    <td>
+                        <label><strong>Univesity:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="city" name="City_Input" class="longInput">
+                    </td>
+                    <td>
+                        <input type="text" id="university" name="University_Input" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="country" class="longInput">
+                            <option value="Thailand">Thailand</option>
+                            <option value="US">US</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><strong>Degree:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td>
+                        <input type="text" id="degree" name="Degree_Input" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Year of Graduation:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" id="graduationYear" name="GraduationYear_Input" class="longInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Contracts:</strong></label><hr>
+                    </td>
+                    <td>
+                        <label><strong>Skills & Experince:</strong></label><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Reference:</strong></label>
+                    </td>
+                    <td>
+                        <label><strong>Skills:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="ref" name="Ref_Input" rows="4" cols="50"></textarea>
+                    </td>
+                    <td>
+                        <textarea id="skills" name="Skills_Input" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Favorite Color:</strong></label>
+                    </td>
+                    <td>
+                        <label><strong>Experience:</strong></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="color" id="favColour" name="favColour_Input" class="longInput">
+                    </td>
+                    <td>
+                        <textarea id="experience" name="Experience_Input" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="SubButton">
+                        <button type="submit" onclick="displayResume()">submit</button>
+                    </td>
+                </tr>
+            </thead style="background-color: pink;">
+        </table>        
+    </form>
+</body>
+</html>

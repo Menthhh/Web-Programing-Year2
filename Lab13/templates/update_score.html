@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+
+<body>
+    <center>
+    <h1>Transcipt Entry Form</h1>
+    <strong> ID: {{ data.get('student_id') }} Name: {{ data.get('password') }}</strong> 
+    <form action="/transcript" method="post">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Credits</th>
+                <th>score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 101 </td>
+                <td> Web Programing </td>
+                <td> 4 </td>
+                <td> <input type="text" id="score_web" name="score_web"> </td>
+            </tr>
+            <tr>
+                <td> 102 </td>
+                <td> Database System </td>
+                <td> 3 </td>
+                <td> <input type="text" id="score_database" name="score_database"> </td>
+            </tr>
+            <tr>
+                <td> 103 </td>
+                <td> Web Programing </td>
+                <td> 4 </td>
+                <td> <input type="text" id="score_software" name="score_software"> </td>
+            </tr>
+            <tr>
+                <td> 104 </td>
+                <td> Web Programing </td>
+                <td> 3 </td>
+                <td> <input type="text" id="score_art" name="score_art"> </td>
+            </tr>
+        </tbody>
+        
+    <table>
+    <button type="submit" class="btn btn-primary btn-block mb-4">SUBMIT</button>
+    </form>
+    </center>
+</body>
+
+</html>

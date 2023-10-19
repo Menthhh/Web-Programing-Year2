@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style/cheat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+        <section id="header">
+            <!-- Profile content goes here -->
+            <center>
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/08/37/profile-icon-male-user-person-avatar-symbol-vector-20910837.jpg" alt="Profile Picture" class="profile-image">
+            </center>
+            <hr>
+            <h1 style="text-align: center;">Profile</h1>
+            <textarea name="profile" id="profile" cols="30" rows="10" placeholder="Enter your profile here..."></textarea>
+        </section>
+        <section id="address">
+            <!-- Address content goes here -->
+            <h2>Address: </h2>
+            <hr>
+                <!-- Form elements for address -->
+                <input type="text" id="street" value="Maple Street">
+                <br><br>
+                <input type="text" id="district" value="California">
+                <br><br>
+                <!-- select country -->
+                <select name="country" id="country">
+                    <option value="default">Select a country</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+        </section>
+        <section id="contract">
+            <!-- Contract content goes here -->    
+            <h2>Contracts: </h2>
+            <hr>
+            <h2>Reference:</h2>
+            <textarea name="reference" id="reference" cols="30" rows="10" placeholder="Enter your reference here..."></textarea>
+        </section>
+        <section id="color">
+            <!-- Color content goes here -->
+            <h2>Color: </h2>
+            <input type="color" style="width: 220px; height:30px;" value="#ff0000">
+        </section>
+        </div>
+        
+        <div class="information-section">
+            <section id="personal-information-text">
+            <!-- Information content goes here -->
+            <h2>Personal Information:</h2>
+            <hr>
+            <h2>Name:</h2>
+            <input type="text" id="name" value="John Doe" size="100">
+            <br><br>
+            <h2>Age:</h2>
+            <input type="range" id="age" value="50" min="0" max="100" onchange="updateAgeValue()"style="width: 400px; height:30px;" >
+            <br><br>
+            <h2>Email:</h2>
+            <input type="email" id="email" value="myEmail@gmail.com" size="100">
+            <br><br>
+            <h2>Phone:</h2>
+            <input type="tel" id="phone" value="123-456-7890" size="100">
+            </section>
+            <section id="education">
+            <!-- Education content goes here -->
+            <h2>Education: </h2><hr>
+            <br>
+            <h2>University:</h2>
+            <input type="text" id="university" value="KMITL" size="100">
+            <br><br>
+            <h2>Degree:</h2>
+            <input type="text" id="degree" value="Software Engineer" size="100">
+            <br><br>
+            <h2>Year of Graduation:</h2>
+            <input type="date" id="year" value="2020" size="100">
+            </section>
+            <section id="skills">
+            <!-- Skills content goes here -->   
+            <h2>Skills & Experience: </h2><hr>
+            <br>
+            <h2>Skills:</h2>
+            <textarea name="skills" cols="30" rows="10" placeholder="Enter your skills here..."></textarea>
+            <br><br>
+            <h2>Experience:</h2>
+            <textarea name="experience" cols="30" rows="10" placeholder="Enter your experience here..."></textarea>
+            </section>
+            <section id="submit" class="SubButton" >
+                <!-- Submit content goes here -->
+                <button style="width: 100px; height: 50px; text-align:center;" >Submit</button>
+            </section>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

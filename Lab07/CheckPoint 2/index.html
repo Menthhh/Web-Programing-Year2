@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Timer</title>
+    <script src="./index.js"></script>
+    <style>
+        button{
+            margin-bottom: 1.3rem;
+            padding: 10px 40px 10px 40px;
+            background-color: rgb(66, 221, 87);
+            border: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(66, 221, 87, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    
+        <h1>Online Timer</h1>
+        <h2 id="current_time"></h2>
+    <div id="mainPage">
+        <button onclick="edit()">edit</button>
+        <table border="1" id="data_table">
+        </table>
+    </div>
+
+    <div id="editPage" style="display: none;">
+        <button onclick="done()">done</button>
+        <table id="">
+
+        </table>
+        <button onclick="addRow()">Add Row</button>
+    </div>
+    </center>
+    
+</body>
+</html>

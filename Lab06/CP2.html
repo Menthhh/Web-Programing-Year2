@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./CP2.css">
+    <script>
+        function Calculate() {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+        
+            if (isNaN(weight) || isNaN(height)) {
+                document.getElementById("result").innerHTML = "Please enter valid values for weight and height.";
+                return;
+            }
+        
+            let bmi = weight / ((height / 100) ** 2);
+            let resultElement = document.getElementById("result");
+        
+            let weightStatus = "";
+            if (bmi < 18.5) {
+                weightStatus = "Underweight";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                weightStatus = "Normal";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                weightStatus = "Overweight";
+            } else {
+                weightStatus = "Obese";
+            }
+        
+            resultElement.innerHTML = "Your weight is " + weight.toFixed(2) + " kg and your height is " + height.toFixed(2) + " cm. Your BMI is " + bmi.toFixed(2) + ". Weight Status: " + weightStatus;
+        
+            // Clear input fields
+            document.getElementById("weight").value = "";
+            document.getElementById("height").value = "";
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="bmi-input">
+        <form>
+            <div>Weight(kg): <input type="number" name="weight" id="weight"></div>
+            <div>Height(cm): <input type="number" name="height" id="height"></div>
+            <div><input type="button" value="Calculate" onclick="Calculate()"></div>
+        </form>
+    </div>
+    <div class="bmi-result">
+        <h2>BMI Result</h2>
+        <div id="result"></div>
+    </div>
+    <div class="bmi-references">
+        <h2>BMI bmi-references</h2>
+        <table>
+            <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+            </tr>
+            <tr>
+                <td>Less than 18.5</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5 to 24.9</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>25.0 to 29.9</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>30.0 or more</td>
+                <td>Obese</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

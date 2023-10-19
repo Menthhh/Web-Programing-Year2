@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./CP1.css">
+    <title>Document</title>
+    <script>
+    function add() {
+        // Get the values from the input fields
+        var itemName = document.getElementById("name").value;
+        var itemAmount = document.getElementById("amount").value;
+        var itemPrice = document.getElementById("price").value;
+
+        // Get the table body
+        var tableBody = document.getElementById("shopping-list-body");
+
+        // Create a new row for the shopping list
+        var newRow = tableBody.insertRow();
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+
+        cell1.innerHTML = itemName;
+        cell2.innerHTML = itemAmount;
+        cell3.innerHTML = "$" + itemPrice;
+
+        // Clear input fields
+        document.getElementById("name").value = "";
+        document.getElementById("amount").value = "0";
+        document.getElementById("price").value = "0";
+    }
+
+    function clearInputs() {
+        // Clear input fields
+        document.getElementById("name").value = "";
+        document.getElementById("amount").value = "0";
+        document.getElementById("price").value = "0";
+    }
+
+    function resetList() {
+        // Clear the shopping list table
+        var tableBody = document.getElementById("shopping-list-body");
+        tableBody.innerHTML = "";
+    }
+    </script>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <div class="shopping-list">
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Price</th>
+        </tr>
+        <tbody id="shopping-list-body">
+            <!-- Shopping list items will be displayed here -->
+        </tbody>
+    </table>
+    </div>
+    <div class="content">
+        <input type="reset" value="Reset List" onclick="resetList()" class="reset-button">
+        <h2> Add Item</h2>
+        <div class="input-pos" > Name: <input type="text" name="name" id="name" placeholder="Tonkla Pokaew"> </div>
+        <div class="input-pos" > Amount: <input type="number" name="amount" id="amount" min="0" max="100" step="1" value="0"> </div>
+        <div class="input-pos" > Price: <input type="number" name="price" id="price" min="0" max="100" step="1" value="0"> </div>
+    </div>
+    <div class="button">
+        <input type="submit" value="Add" onclick="add()">
+        <input type="reset" value="Clear" onclick="clearInputs()">
+    </div>
+</body>
+</html>

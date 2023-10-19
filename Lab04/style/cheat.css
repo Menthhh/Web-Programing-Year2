@@ -1,0 +1,109 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    flex: 1; /* This section will take available space */
+    max-width: 250px; /* Limit the width of the left section */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-bottom: 230px;
+    margin-bottom: 200px;
+    
+}
+
+.profile-image {
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.information-section {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+/* Additional styles can be added to further customize the appearance of the sections */
+#address{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#contract{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:160px;
+}
+
+#color{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#personal-information-text{
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+
+}
+
+#education{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 380px;
+}
+
+#skills{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#submit{
+    margin-top: 100px;
+    margin-left: 200px;
+    
+}
+
+.SubButton button {
+    text-align: right;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.SubButton button:hover {
+    background-color: #004c75;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

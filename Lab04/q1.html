@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="ProfileStyle.css">
+    <script src="Lab.js"></script>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <thead style="font-family: Arial, Helvetica, sans-serif;">
+                <tr>
+                    <td style="background-color: blue;">
+                    </td>
+                    <th style="background-color: yellow; text-align: left;">
+                        Personal Information<hr>
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="image" style="background-color: blue; text-align: center;" >
+                        <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg", alt="" height="200" width="200">
+                    </td>
+                    <th style="background-color: yellow; text-align: left;">
+                        <strong>Name:</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="background-color: yellow; text-align: left;">
+                        <input type="text" id="name" name="Name_Input">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="background-color: yellow; text-align: left;">
+                        Age:
+                    </th>
+                </tr>
+                <tr>
+                    <td style="background-color: yellow;">
+                        <input type="range" id="age" name="Age_Input">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="background-color: blue; text-align: left;">
+                        <hr>Profile:
+                    </th>
+                    <th style="background-color: yellow; text-align: left;">
+                        Email:
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="background-color: blue; text-align: left;">
+                        <textarea id="profile" name="Input_Profile" rows="4" cols="50"></textarea>
+                    </td>
+                    <td style="background-color: yellow; ">
+                        <input type="email" id="email" name="Input_email">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="background-color: yellow; text-align: left;">
+                        Phone:
+                    </th>
+                </tr>
+                <tr>
+                    <td style="background-color: yellow; ">
+                        <input type="tel" id="phone" name="Input_Tel">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="background-color: pink; text-align: left;">
+                        Adress:<hr>
+                    </td>
+                    <th style="background-color: green; text-align: left;">
+                        Education:<hr>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="street" name="Street_Input">
+                    </td>
+                    <td>
+                        <strong>Univesity:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="city" name="City_Input">
+                    </td>
+                    <td>
+                        <input type="text" id="university" name="University_Input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="country">
+                            <option value="Thailand">Thailand</option>
+                            <option value="US">US</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <strong>Degree:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td>
+                        <input type="text" id="degree" name="Degree_Input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Year of Graduation:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" id="graduationYear" name="GraduationYear_Input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Contracts:</strong><hr>
+                    </td>
+                    <td>
+                        <strong>Skills & Experince:</strong><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Reference:</strong>
+                    </td>
+                    <td>
+                        <strong>Skills:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="ref" name="Ref_Input" rows="4" cols="50"></textarea>
+                    </td>
+                    <td>
+                        <textarea id="skills" name="Skills_Input" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Favorite Color:</strong>
+                    </td>
+                    <td>
+                        <strong>Experience:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="color" id="favColour" name="favColour_Input">
+                    </td>
+                    <td>
+                        <textarea id="experience" name="Experience_Input" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="SubButton">
+                        <input type="submit" value="Submit" onclick="displayResume()">
+                    </td>
+                </tr>
+            </thead>
+        </table>        
+    </form>
+</body>
+</html>
